@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./Card";
+import RecipeCardShimmer from "./Shimmer/RecipeCardShimmer";
 
 const RecipePoster = ({ title, number }) => {
   const [recipes, setRecipes] = useState([]);
@@ -18,6 +19,11 @@ const RecipePoster = ({ title, number }) => {
         console.log(err);
       });
   }, []);
+  if(recipes.length==0){
+    return (
+      <RecipeCardShimmer />
+    );
+  }
   return (
     <div className="p-4 m-2">
       <h2 className="mx-10 my-4 font-bold text-xl">{title.toUpperCase()}</h2>

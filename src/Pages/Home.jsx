@@ -3,7 +3,7 @@ import RecipePoster from "../components/RecipePosters";
 
 const Home = () => {
    
-  return (<div className="p-2 bg-slate-50">
+  return (<div className="p-2">
     <RecipePoster title={"main course"} number={8}/>
     <RecipePoster title={"breakfast"} number={8}/>
     <RecipePoster title={"beverage"} number={4}/>

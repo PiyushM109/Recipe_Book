@@ -7,7 +7,7 @@ const Card = (data) => {
     navigate(`/RecipePage/${id}`);
   }
   return (
-    <div className="w-[350px] h-[400px] bg-white border border-gray-200 rounded-lg shadow-lg m-4 flex flex-col justify-between">
+    <div className="w-[350px] h-[400px] p-1 bg-white border border-gray-200 rounded-lg shadow-lg m-4 flex flex-col justify-between">
       <div>
       <div className="p-4">
         <img
