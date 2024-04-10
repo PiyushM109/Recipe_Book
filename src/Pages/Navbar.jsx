@@ -5,11 +5,11 @@ const Navbar = () => {
     <>
     <div className="sticky bg-white z-20 top-0 start-0 border-b border-gray-100">
       <div className="max-w-screen-3xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <div className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-2xl font-semibold whitespace-nowrap">
             Recipe Book
           </span>
-        </a>
+        </div>
         
         <div
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
